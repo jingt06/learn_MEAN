@@ -1,5 +1,4 @@
 var express = require('express');
-
 var bookRouter = express.Router();
 
 
@@ -34,7 +33,6 @@ var router = function (nav){
 						books: books
 					});
 		});
-
 	bookRouter.route('/:id')
 		.get(function(req,res){
 			var id = req.params.id
